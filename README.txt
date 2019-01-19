@@ -14,7 +14,7 @@ Example config:
         }
     ],
     "email": "johndoe@johndoe.me",
-    "password": "s3cur3p@$$"
+    "password": "s3cur3p@$$",
     "default_message": "message3"
 }
 
