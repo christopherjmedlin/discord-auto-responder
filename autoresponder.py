@@ -45,7 +45,7 @@ if __name__ == "__main__":
     if not password:
         password = getpass()
     default_message = config.get("default_message")
-    if not email:
+    if not default_message:
         default_message = input("Default Message: ")
 
     try:
