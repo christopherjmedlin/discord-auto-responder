@@ -22,7 +22,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    mentioned = client.user.mentioned_in(message)
+    mentioned = client.user.mention in message.content
     if (message.channel.is_private and message.author.id != client.user.id) or mentioned:
         response = message_map.get(str(message.author.id), default_message)
         await client.send_message(message.channel, response)
